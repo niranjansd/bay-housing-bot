@@ -1,4 +1,4 @@
-# FactualCat Twitter Bot
+# SF Bay Area Housing Twitter Bot
 
 [@SFBayHousingBot](https://twitter.com/SFBayHousingBot) is a Twitter Bot that Tweets real estate listing in the SF Bay Area daily.
 The information for this bot is scraped from Redfin and then formatted into tweets by CHATGPT3.5.
@@ -10,9 +10,9 @@ There are two versions of this code sample in this repository:
 
 #ToDo
 The project is WIP currently with the following roadmap -
-## Deploy to Cloud Functions
-## Setup Cloud Scheduler
-## Setup pictures.
+- Deploy to Cloud Functions
+- Setup Cloud Scheduler
+- Setup pictures.
 
 ## License
 
