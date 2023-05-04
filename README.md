@@ -8,7 +8,7 @@ There are two versions of this code sample in this repository:
 - [local.py](https://github.com/niranjansd/bay-housing-bot/blob/main/local.py) - The Python code sample for testing locally
 - [gcp_function.py](https://github.com/niranjansd/bay-housing-bot/blob/main/gcp_function.py) - The version of the code deployed to [Cloud Functions](https://cloud.google.com/functions). 
 
-#ToDo
+# ToDo
 The project is WIP currently with the following roadmap -
 - Deploy to Cloud Functions
 - Setup Cloud Scheduler
