@@ -1,5 +1,10 @@
 import openai
-
+import os
+def open_file(filepath):
+    with open(filepath, 'r', encoding='utf-8') as infile:
+        return infile.read()
+openai.api_key = open_file(f'{os.getcwd()}\openai_api_key.txt'.replace('\\', '\\\\'))
+print(openai.api_key)
 SWEGPT = """You are SWGPT,
 an expert software engineer who helps me build apps
 by giving helpful coding advice."""
@@ -41,6 +46,6 @@ def format_listing(listing_dict):
 following information {listing_dict}.
 Dont try to sell me, just give me the information with a neutral objective tone.
 Avoid giving meaningless numbers and id information, try to fit in as much useful and helpful
-factual information as possible. Do include the link.
+factual information as possible. Always include both the price and the link.
 No hashtags or MLS.
 """)

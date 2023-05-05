@@ -3,5 +3,4 @@
 
 requests==2.18.3
 requests-oauthlib==1.3.0
-pandas==0.22.0
 openai
