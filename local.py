@@ -18,7 +18,7 @@ access_token = auth.accessToken
 access_token_secret = auth.accessTokenSecret
 
 # Time
-start_time = datetime.datetime(2023, 7, 10).timestamp()
+start_time = datetime.datetime(2023, 7, 11).timestamp()
 current_time = int(time.time())
 
 # Function to pick a random fact and generate its text blurb.
