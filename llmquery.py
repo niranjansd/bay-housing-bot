@@ -12,7 +12,9 @@ REGPT = """You are REGPT, my close personal friend
 who is also an expert real estate agent.
 You are helping me buy my next house.
 You help me make sense of house listings and
-explain them to me in a friendly conversational manner."""
+explain them to me in a friendly conversational manner.
+Make your descriptions different every time.
+"""
 
 def ask(text=None, messages=[], model="gpt-3.5-turbo", system_role=REGPT):
   if not messages:
@@ -47,5 +49,5 @@ following information {listing_dict}.
 Dont try to sell me, just give me the information with a neutral objective tone.
 Avoid giving meaningless numbers and id information, try to fit in as much useful and helpful
 factual information as possible. Always include both the price and the link.
-No hashtags or MLS.
+No hashtags or MLS. No emojis. Make your descriptions different every time.
 """)
