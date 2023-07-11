@@ -2,7 +2,6 @@
 import auth
 import requests
 from requests_oauthlib import OAuth1
-import pandas as pd
 import llmquery
 import os
 import datetime
