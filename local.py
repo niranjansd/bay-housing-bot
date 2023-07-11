@@ -23,7 +23,7 @@ start_time = datetime.datetime(2023, 7, 10).timestamp()
 current_time = int(time.time())
 
 # Function to pick a random fact and generate its text blurb.
-def random_fact():
+def timed_fact():
     # Hour index of the day
     i = int((current_time - start_time)//(1*3600))
     print(i)
@@ -61,6 +61,7 @@ def format_fact(fact):
     print(len(fact))
     return {"text": "{}".format(fact)}
 
+
 # Connect to Twitter API
 def connect_to_oauth(consumer_key, consumer_secret, acccess_token, access_token_secret):
     url = "https://api.twitter.com/2/tweets"
@@ -71,7 +72,7 @@ def connect_to_oauth(consumer_key, consumer_secret, acccess_token, access_token_
 def main():
     payload = None
     while not payload:
-        fact = random_fact()
+        fact = timed_fact()
         payload = format_fact(fact)
     url, auth = connect_to_oauth(
         api_key, api_secret, access_token, access_token_secret
