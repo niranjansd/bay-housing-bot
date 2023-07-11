@@ -5,14 +5,12 @@ The information for this bot is scraped from Redfin and then formatted into twee
 
 There are two versions of this code sample in this repository:
 
-- [local.py](https://github.com/niranjansd/bay-housing-bot/blob/main/local.py) - The Python code sample for testing locally
+- [local.py](https://github.com/niranjansd/bay-housing-bot/blob/main/local.py) - The Python code sample for testing locally or running cron
 - [gcp_function.py](https://github.com/niranjansd/bay-housing-bot/blob/main/gcp_function.py) - The version of the code deployed to [Cloud Functions](https://cloud.google.com/functions). 
 
 # ToDo
 The project is WIP currently with the following roadmap -
-- Deploy to Cloud Functions
-- Setup Cloud Scheduler
-- Setup pictures.
+- Run analysis on listing dataset
 
 ## License
 

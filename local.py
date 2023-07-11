@@ -70,9 +70,11 @@ def connect_to_oauth(consumer_key, consumer_secret, acccess_token, access_token_
 
 def main():
     payload = None
+    # Keep generating tweets until one is short enough to tweet.
     while not payload:
         fact = timed_fact()
         payload = format_fact(fact)
+    # Tweet the payload
     url, auth = connect_to_oauth(
         api_key, api_secret, access_token, access_token_secret
     )
