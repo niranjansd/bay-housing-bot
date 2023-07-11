@@ -24,7 +24,7 @@ current_time = int(time.time())
 # Function to pick a random fact and generate its text blurb.
 def timed_fact():
     # Hour index of the day
-    i = int((current_time - start_time)//(1*3600))
+    i = int((current_time - start_time)/(1*3600))
     print(i)
     # Get the listings csv
     url = 'https://raw.githubusercontent.com/niranjansd/bay-housing-bot/master/listings.csv'
